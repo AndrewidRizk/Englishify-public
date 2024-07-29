@@ -4,8 +4,7 @@
 - The project still is not ready yet
 - I had to make a data clean up, deciding that i need to change my database from SQL to Postgre and elastic search
 
-# Implementation plan
-# 1. Conceptualization and Planning
+# 1. Concept
 
     Define Objectives:
         - Create a webapp where users can search for specific word, and results of youtube videos, podcasts and audiobooks with the given word
