@@ -1,10 +1,10 @@
-##Englishify-public
+# Englishify-public
 
 - This is a public version of my private repositary.
 - The project still is not ready yet
 - I had to make a data clean up, deciding that i need to change my database from SQL to Postgre and elastic search
 
-##Implementation plan
+# Implementation plan
 # 1. Conceptualization and Planning
 
     Define Objectives:
