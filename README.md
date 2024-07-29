@@ -19,3 +19,35 @@
         - Search Functionality: Allow users to search for content based on keywords.
         - Playback: Stream all the content that is found directly, at the given time where the keywords are used.
         - Responsive Design: Ensure the website works well across various devices and screen sizes.
+# 2. Technical Requirements
+Data Collection:
+
+    Collecting video IDs, captions, and storing them in a PostgreSQL database.
+    Ensure accurate timestamping of when specific words are spoken.
+    Frontend:
+    
+    Technologies: React.js for building dynamic user interfaces.
+    Styling: Tailwind CSS for responsive and modern design.
+    Integration: Utilize Axios for communicating with the backend APIs.
+    Backend:
+    
+    Framework: Python with Flask to develop RESTful APIs for connecting the database to the frontend.
+    Deployment:
+    
+    Hosting: Deploy the frontend and backend on Vercel for seamless integration and scalability.
+# 3. Architecture Design
+    Frontend Components:
+    
+    Search Component: Allows users to input queries and sends requests to the backend.
+    Result Display: Shows search results with video details and playback options.
+    Player Component: Facilitates video playback with precise timing of captions.
+    Dynamic Text Component: Displays captions with highlighted searched words.
+    Filters: Options to select content type (e.g., podcasts, songs, audiobooks), age, and level.
+    Backend Structure:
+    
+    API Endpoints:
+    /search
+    /play
+    /captions
+    ...
+    Controllers: Manage business logic for processing search queries, handling user sessions, and interacting with external APIs (e.g., YouTube Data API).
