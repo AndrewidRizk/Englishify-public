@@ -5,3 +5,4 @@ pandas
 gunicorn
 psycopg2-binary 
 youtube-transcript-api 
+pytube
