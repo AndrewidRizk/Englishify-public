@@ -1,0 +1,121 @@
+.history-panel {
+    width: 180px;  /* Adjusted width for a neater look */
+    height: calc(100vh - 60px);
+    background: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+/* Styling adjustments and animations */
+.history-panel.hidden {
+    transform: translateX(-230px); /* Slide out a bit more */
+    opacity: 0;
+  }
+  
+  .maximize-btn {
+    top: 50%; /* Center vertically */
+    left: 0;
+  }
+  
+  
+  .history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .history-title {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .toggle-btn {
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #007bff;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: #e2e6ea;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  
+  .history-item {
+    padding: 8px;
+    margin: 5px 0;
+    background: #e9ecef;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .history-item:hover {
+    background: #ced4da;
+  }
+  
+  .empty {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* Animation Classes */
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(-20px);  /* Start above */
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);  /* Move into place */
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);  /* Initial position */
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);  /* Exit by moving up */
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  /* Maximize Button */
+  .maximize-btn {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  .maximize-btn:hover {
+    background: #0056b3;
+  }
+  
