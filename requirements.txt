@@ -5,5 +5,3 @@ pandas
 gunicorn
 psycopg2-binary 
 youtube-transcript-api
-react2
-react-dom
