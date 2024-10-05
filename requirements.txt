@@ -1,8 +1,0 @@
-Flask
-requests
-google-api-python-client
-youtube-transcript-api
-mysql-connector-python
-wikitextparser
-pattern
-langdetect
