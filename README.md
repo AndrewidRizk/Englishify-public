@@ -1,4 +1,5 @@
-# **Englishify**
+# **Englishify**                [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## **Project Overview**
 **Englishify** is a web application designed to help second-language learners improve their English skills through real-world video content. By allowing users to search for words or phrases in YouTube captions, Englishify makes it easier to understand how words are used and pronounced in different contexts.
