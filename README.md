@@ -69,26 +69,22 @@ cd Englishify
 Navigate to the backend directory and install dependencies:
 
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 Set up the PostgreSQL database and start the Flask server:
 
 ```bash
-Copy code
 python main.py
 ```
 ### **3. Frontend Setup**
 Navigate to the frontend directory and install React dependencies:
 ```bash
-Copy code
 cd frontend
 npm install
 ```
 Start the React server:
 
 ```bash
-Copy code
 npm start
 ```
 ## **License**
