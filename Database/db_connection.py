@@ -9,8 +9,10 @@ def connect_postgresql():
 
 def test_connection():
     try:
-        if connect_postgresql():
-            print("postgre connection success")
+        for i in range(5):
+            if connect_postgresql():
+                print("postgre connection success")
+                break
     except Exception as e:
         print(f"postgre connection FAILED with an error: {e}")
 
