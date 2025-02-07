@@ -101,7 +101,8 @@ def search_phrase(words):
             FROM Captions c
             JOIN Word_index w ON c.caption_id = w.caption_id
             WHERE w.word = %s
-            ORDER BY c.start_time;
+            ORDER BY c.start_time
+            LIMIT 1000;
             """
             cursor.execute(query, (normalized_words[0],))
 
@@ -118,7 +119,8 @@ def search_phrase(words):
                     HAVING COUNT(DISTINCT word) = %s
                 ) i ON c.caption_id = i.caption_id
                 WHERE {' AND '.join([f'EXISTS (SELECT 1 FROM Word_index idx{j} WHERE idx{j}.caption_id = c.caption_id AND idx{j}.word = %s)' for j in range(len(words))])}
-                ORDER BY c.start_time;
+                ORDER BY c.start_time
+                LIMIT 500;
                 """
                 
             params = []
